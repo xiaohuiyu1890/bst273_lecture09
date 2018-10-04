@@ -15,8 +15,20 @@ parser.add_argument(
 
 args = parser.parse_args( )
 
-print(args)
-print(args.data_file)
+print("args = ", args)
+print("args.data_file = ", args.data_file)
+
+fh = open(args.data_file)
+print("the file handle is", fh)
+
+words=0
+lines=0
+chars=0
+
+for line in fh:
+    print(line)
+
+
 
 #-------------------------------------------------------------------------------
 # our code for analyzing the data
