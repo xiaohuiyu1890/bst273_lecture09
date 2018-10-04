@@ -27,6 +27,7 @@ chars=0
 
 for line in fh:
     lines+=1
+
 print(lines)
 
 
